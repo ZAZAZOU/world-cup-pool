@@ -1,6 +1,14 @@
 import { language } from '$lib/language.svelte';
 
 const knockoutLabels = {
+	de: {
+		R32: 'Sechzehntelfinale',
+		R16: 'Achtelfinale',
+		QF: 'Viertelfinale',
+		SF: 'Halbfinale',
+		'3RD': 'Spiel um Platz 3',
+		FINAL: 'Finale'
+	},
 	nb: {
 		R32: '32-delsfinale',
 		R16: 'Åttedelsfinale',
@@ -33,7 +41,7 @@ export function stageName(stage: string) {
 
 export function matchStageLabel(match: { stage: string; groupLetter?: string }) {
 	if (match.stage === 'group') {
-		return `${language.text('Gruppespill', 'Gruppespel', 'Group stage')} · ${language.text('Gruppe', 'Gruppe', 'Group')} ${match.groupLetter ?? ''}`;
+		return `${language.text('Gruppespill', 'Gruppespel', 'Group stage', 'Gruppenphase')} · ${language.text('Gruppe', 'Gruppe', 'Group', 'Gruppe')} ${match.groupLetter ?? ''}`;
 	}
 	return stageName(match.stage);
 }
