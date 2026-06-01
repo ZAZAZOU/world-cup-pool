@@ -155,7 +155,7 @@
 		} catch (e: unknown) {
 			msg =
 				(e as { message?: string })?.message ??
-				language.text('Kunne ikke lagre tipset.', 'Kunne ikkje lagre tipset.', 'Could not save tip.');
+				language.text('Kunne ikke lagre tipset.', 'Kunne ikkje lagre tipset.', 'Could not save tip.', 'Tipp konnte nicht gespeichert werden.');
 		} finally {
 			busy = false;
 		}
@@ -375,8 +375,8 @@
 							<thead>
 								<tr>
 									<th></th>
-									<th class="ftip">{language.text('Tips', 'Tips', 'Tip')}</th>
-									<th class="fpts">{language.text('P', 'P', 'Pts')}</th>
+									<th class="ftip">{language.text('Tips', 'Tips', 'Tip', 'Tipp')}</th>
+									<th class="fpts">{language.text('P', 'P', 'Pts', 'Pkt')}</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -406,9 +406,9 @@
 							<div class="friends-actions">
 								<button class="btn secondary morefriends" onclick={() => (showAllFriends = !showAllFriends)}>
 									{#if showAllFriends}
-										{language.text('Vis færre', 'Vis færre', 'Show fewer')}
+										{language.text('Vis færre', 'Vis færre', 'Show fewer', 'Weniger anzeigen')}
 									{:else}
-										{language.text(`Vis ${hiddenFriendsCount} flere`, `Vis ${hiddenFriendsCount} fleire`, `Show ${hiddenFriendsCount} more`)}
+										{language.text(`Vis ${hiddenFriendsCount} flere`, `Vis ${hiddenFriendsCount} fleire`, `Show ${hiddenFriendsCount} more`, `${hiddenFriendsCount} weitere anzeigen`)}
 									{/if}
 								</button>
 							</div>
@@ -461,7 +461,7 @@
 				</div>
 
 				{#if ftTie}
-						<div class="phase">{language.text('Etter ekstraomganger', 'Etter ekstraomgangar', 'After extra time')}</div>
+						<div class="phase">{language.text('Etter ekstraomganger', 'Etter ekstraomgangar', 'After extra time', 'Nach Verlängerung')}</div>
 					<div class="enter">
 						<Stepper bind:value={etH} min={ftH} />
 						<span class="sep">:</span>
@@ -470,7 +470,7 @@
 				{/if}
 
 				{#if etTie}
-						<div class="phase">{language.text('Straffer - hvem går videre?', 'Straffar - kven går vidare?', 'Penalties - who goes through?')}</div>
+						<div class="phase">{language.text('Straffer - hvem går videre?', 'Straffar - kven går vidare?', 'Penalties - who goes through?', 'Elfmeterschießen – wer kommt weiter?')}</div>
 					<div class="pens">
 						<button
 							class="pen"

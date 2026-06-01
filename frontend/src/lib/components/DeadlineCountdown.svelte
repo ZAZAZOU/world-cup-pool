@@ -35,7 +35,7 @@
 		const hours = Math.floor((totalSeconds % 86_400) / 3_600);
 		const minutes = Math.floor((totalSeconds % 3_600) / 60);
 		const seconds = totalSeconds % 60;
-		const hourUnit = language.text('t', 't', 'h');
+		const hourUnit = language.text('t', 't', 'h', 'h');
 
 		if (days > 0) {
 			return hours > 0 ? `${days} d ${hours} ${hourUnit}` : `${days} d`;
@@ -56,7 +56,7 @@
 		remainingMs <= 600_000 ? 'critical' : remainingMs <= 3_600_000 ? 'warn' : 'normal'
 	);
 	let remainingLabel = $derived(expired ? '' : formatRemaining(remainingMs));
-	let relationLabel = $derived(language.text('om', 'om', 'in'));
+	let relationLabel = $derived(language.text('om', 'om', 'in', 'in'));
 
 	$effect(() => {
 		now = serverClock.now();

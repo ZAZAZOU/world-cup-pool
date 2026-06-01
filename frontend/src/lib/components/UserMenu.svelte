@@ -103,7 +103,7 @@
 			</button>
 			{#if serverClock.dev}
 				<a class="item" href="/dev" onclick={() => (open = false)}>
-					<FlaskConical size={17} /> {language.text('Utviklerverktøy', 'Utviklarverktøy', 'Dev tools')}
+					<FlaskConical size={17} /> {language.text('Utviklerverktøy', 'Utviklarverktøy', 'Dev tools', 'Entwicklertools')}
 				</a>
 			{/if}
 			<button class="item" type="button" onclick={() => auth.logout()}>
