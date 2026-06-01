@@ -164,6 +164,168 @@ export const strings: Record<
 		};
 	}
 > = {
+	de: {
+		nav: {
+			home: 'Start',
+			matchTips: 'Spieltipps',
+			worldCupTips: 'WM-Tipps',
+			bracket: 'Turnierbaum',
+			leagues: 'Ligen'
+		},
+		chrome: {
+			settings: 'Einstellungen',
+			about: 'Über das Spiel',
+			logout: 'Abmelden',
+			lightTheme: 'Helles Design',
+			darkTheme: 'Dunkles Design',
+			worldCupTheme: 'WM-Design',
+			standardTheme: 'Standard-Design',
+			language: 'English',
+			languageAria: 'Auf Englisch umschalten'
+		},
+		auth: {
+			tagline: 'Spieltipps und WM-Tipps in einer Liga.',
+			subtitle: 'Stell deine Crew zusammen, tippe die Spiele und verfolge das WM-Drama ab dem Anpfiff.',
+			emailLabel: 'E-Mail',
+			passwordLabel: 'Passwort',
+			emailPlaceholder: 'name@beispiel.de',
+			login: 'Anmelden',
+			forgotPassword: 'Passwort vergessen?',
+			or: 'ODER',
+			newHere: 'Neu hier?',
+			createAccount: 'Konto erstellen.',
+			google: 'Mit Google fortfahren',
+			wrongCredentials: 'E-Mail oder Passwort falsch.',
+			googleFailed: 'Google-Anmeldung fehlgeschlagen.'
+		},
+		register: {
+			title: 'Konto erstellen',
+			subtitle: 'Mach beim WM-Tippspiel mit.',
+			nameLabel: 'Anzeigename',
+			passwordHint: 'Das Passwort muss mindestens 8 Zeichen lang sein.',
+			create: 'Konto erstellen',
+			loginPrompt: 'Schon ein Konto?',
+			loginLink: 'Anmelden',
+			error: 'Konto konnte nicht erstellt werden.',
+			passwordTooShort: 'Das Passwort muss mindestens 8 Zeichen lang sein.'
+		},
+		forgotPassword: {
+			title: 'Passwort zurücksetzen',
+			subtitle: 'Gib die E-Mail an, mit der du dich registriert hast — wir senden dir einen Link zum Zurücksetzen.',
+			emailLabel: 'E-Mail',
+			send: 'Link zum Zurücksetzen senden',
+			success: 'Falls die E-Mail registriert ist, ist ein Link unterwegs.',
+			back: 'Zurück zur Anmeldung',
+			error: 'Link konnte nicht gesendet werden.'
+		},
+		resetPassword: {
+			title: 'Neues Passwort wählen',
+			subtitle: 'Gib dein neues Passwort ein und bestätige es.',
+			newPasswordLabel: 'Neues Passwort',
+			confirmLabel: 'Neues Passwort bestätigen',
+			update: 'Passwort aktualisieren',
+			success: 'Passwort aktualisiert — du wirst zur Anmeldung weitergeleitet…',
+			back: 'Zurück zur Anmeldung',
+			errorInvalid: 'Der Link ist ungültig oder abgelaufen.',
+			errorMismatch: 'Die Passwörter stimmen nicht überein.',
+			passwordTooShort: 'Das Passwort muss mindestens 8 Zeichen lang sein.',
+			updateError: 'Passwort konnte nicht aktualisiert werden.'
+		},
+		search: {
+			trigger: 'Suche',
+			panelAria: 'Im WM-Tippspiel suchen',
+			placeholder: 'Spiel, Team, Gruppe oder Liga suchen',
+			close: 'Suche schließen',
+			loading: 'Suche wird geladen…',
+			empty: 'Finde ein Spiel, Team oder eine Liga.',
+			noResults: 'Keine Ergebnisse.',
+			matches: 'Spiele',
+			teams: 'Teams',
+			groups: 'Gruppen',
+			leagues: 'Meine Ligen',
+			noLeagues: 'Keine Ligen'
+		},
+		pwa: {
+			installTitle: 'WM-Tippspiel installieren',
+			installBody: 'Symbol auf dem Startbildschirm, Vollbild und schnellerer Start.',
+			installButton: 'Installieren',
+			close: 'Schließen',
+			iosTitle: 'WM-Tippspiel zum Startbildschirm hinzufügen',
+			iosStep1: 'Tippe auf das Teilen-Symbol in der Safari-Leiste.',
+			iosStep2: 'Scrolle nach unten und wähle „Zum Home-Bildschirm".',
+			iosStep3: 'Tippe oben rechts auf „Hinzufügen".',
+			understood: 'Verstanden'
+		},
+		introCard: {
+			kicker: 'Neu hier?',
+			title: 'Willkommen beim WM-Tippspiel',
+			body: 'Tippe Spiele, tritt Ligen bei und verfolge deine Punkte durch die WM.',
+			leaguesTitle: 'Ligen',
+			leaguesBody: 'Erstelle eine oder tritt mit einem Code bei.',
+			matchTipsTitle: 'Spieltipps',
+			matchTipsBody: 'Gib sie vor dem Anpfiff ab.',
+			worldCupTipsTitle: 'WM-Tipps',
+			worldCupTipsBody: 'Tippe den Turnierbaum und den Sieger.',
+			primaryCta: 'Ligen öffnen',
+			secondaryCta: 'Spieltipps ansehen',
+			footnote: '',
+			close: 'Infokarte schließen',
+			settingsTitle: 'Willkommenskarte',
+			settingsBody: 'Zeige die Willkommenskarte auf der Startseite erneut an, wenn du eine kurze Auffrischung möchtest.',
+			settingsActive: 'Die Karte ist aktiv und bleibt auf der Startseite, bis du sie schließt.',
+			settingsDismissed: 'Die Karte ist für diesen Nutzer auf diesem Gerät ausgeblendet.',
+			settingsButton: 'Willkommenskarte wieder anzeigen',
+			settingsSuccess: 'Die Willkommenskarte erscheint wieder auf der Startseite.',
+			settingsLink: 'Zur Startseite'
+		},
+		tipCard: {
+			lockedResult: 'Ergebnis',
+			noTipLocked: 'Kein Tipp — dieses Spiel ist gesperrt.',
+			showFriendTips: 'Tipps der Freunde anzeigen',
+			hideFriendTips: 'Tipps der Freunde ausblenden',
+			noFriendTips: 'Keine Freunde haben dieses Spiel getippt.',
+			saved: 'Gespeichert',
+			loading: 'Speichern…',
+			stageGroup: 'Gruppe',
+			stageOther: 'Runde',
+			day: 'Heute',
+			live: 'Live',
+			locked: 'gesperrt',
+			missing: 'fehlt',
+			result: 'Dein Tipp',
+			goThrough: 'weiter',
+			penalties: 'Elfmeterschießen',
+			save: 'Speichern',
+			visiting: 'Dein Tipp',
+			crowdTitle: 'Wie alle getippt haben',
+			crowdEmpty: 'Niemand sonst hat dieses Spiel getippt.',
+			crowdHome: 'Heim',
+			crowdDraw: 'Unentschieden',
+			crowdAway: 'Auswärts',
+			crowdTotal: 'Tipps gesamt'
+		},
+		playerCard: {
+			title: 'Spielerkarte',
+			hitRate: 'Trefferquote',
+			hitRateSub: 'exakte Ergebnisse',
+			longestStreak: 'Längste Serie',
+			longestStreakSub: 'Spiele in Folge mit Punkten',
+			currentStreak: 'Aktuelle Serie',
+			largestMiss: 'Größter Fehltipp',
+			largestMissSub: 'Du hast getippt',
+			noStats: 'Noch keine gewerteten Spiele.'
+		},
+		common: {
+			languageName: 'Deutsch'
+		},
+		odds: {
+			sourceOddsApi: 'Wettquoten',
+			sourceRankings: 'FIFA-Rangliste',
+			toggleToDecimal: 'Quoten anzeigen',
+			toggleToPct: '% anzeigen'
+		}
+	},
+
 	nb: {
 		nav: {
 			home: 'Hjem',
@@ -502,8 +664,8 @@ export const strings: Record<
 			darkTheme: 'Dark theme',
 			worldCupTheme: 'World Cup theme',
 			standardTheme: 'Standard theme',
-			language: 'Bokmål',
-			languageAria: 'Switch to Norwegian Bokmål'
+			language: 'Deutsch',
+			languageAria: 'Switch to German'
 		},
 		auth: {
 			tagline: 'Match tips and World Cup tips in one league.',
